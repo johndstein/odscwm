@@ -1,0 +1,10 @@
+{
+  "name": "odscwm",
+  "version": "0.0.0",
+  "description": "One dimension simple Cloudwatch metrics",
+  "main": "index.js",
+  "author": "John Stein",
+  "dependencies": {
+    "aws-sdk": "^2.460.0"
+  }
+}
