@@ -1,6 +1,6 @@
 {
   "name": "odscwm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "One dimension simple Cloudwatch metrics",
   "main": "index.js",
   "author": "John Stein",
