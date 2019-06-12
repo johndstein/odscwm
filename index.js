@@ -62,6 +62,7 @@ class Stats {
     if (this.putMetricDataParams.MetricData.length) {
       return cloudwatch.putMetricData(this.putMetricDataParams).promise()
     }
+    return Promise.resolve()
   }
   toString(indent) {
     return JSON.stringify(this, null, indent)
