@@ -25,6 +25,10 @@ class Stats {
     this.options = options
     this.MetricData = {}
   }
+  // Return a new instance of stats with same options as this one.
+  newInstance() {
+    return new Stats(this.options)
+  }
   addMetric(name, value) {
     if (this.options.metrics[name]) {
       if (!this.MetricData[name]) {
