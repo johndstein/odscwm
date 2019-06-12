@@ -35,7 +35,7 @@ class Stats {
             Value: this.options.dimensionValue
           }],
           Timestamp: new Date(),
-          Unit: this.options.metrics[name].unit,
+          Unit: this.options.metrics[name],
           Counts: [],
           Values: [],
         }
@@ -93,4 +93,11 @@ if (require.main === module) {
   console.log(s.toString(3))
   s.buildParams()
   console.log(s.toString(3))
+  s.putMetricData()
+    .then((r) => {
+      console.log('DONE', r)
+    })
+    .catch((e) => {
+      console.log('ERROR', e)
+    })
 }
