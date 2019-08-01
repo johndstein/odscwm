@@ -2,6 +2,8 @@
 
 One dimension simple Cloudwatch metrics
 
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html
+
 ```bash
 ./index.js
 
